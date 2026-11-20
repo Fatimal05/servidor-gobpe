@@ -5,7 +5,9 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+const path = require("path");
 
+app.use(express.static(path.join(__dirname, "frontend")));
 // Ruta GET: consultar los trámites
 app.get("/api/tramites", (req, res) => {
     res.json({
