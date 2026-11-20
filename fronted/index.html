@@ -1,0 +1,53 @@
+
+<header>
+    <h1>GOB.PE</h1>
+    <p>Plataforma digital del Estado peruano</p>
+</header>
+
+<nav aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#tramites">Trámites</a>
+    <a href="#servicios">Servicios</a>
+</nav>
+
+<main id="inicio">
+    <section id="tramites">
+        <h2>Consulta de trámites</h2>
+        <p>Encuentra información sobre los trámites del Estado.</p>
+
+        <form>
+  
+<div class="aviso-privacidad">
+    <h3>Protección de datos personales</h3>
+    <p>
+        Este formulario solicita únicamente el nombre
+        del trámite que deseas consultar.
+        No ingreses información personal confidencial.
+    </p>
+</div>
+       
+       
+<form id="consultaForm">
+    <label for="busqueda">¿Qué trámite buscas?</label>
+
+    <input
+        type="text"
+        id="busqueda"
+        name="busqueda"
+        placeholder="Escribe el nombre del trámite"
+    >
+
+    <button type="submit">Buscar trámite</button>
+</form>
+
+<div id="resultado" aria-live="polite"></div>
+     
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Información para el ciudadano - Perú</p>
+</footer>
+
+
